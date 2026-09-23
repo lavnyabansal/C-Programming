@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int choice;
+    int num, a, b, c;
+    char op;
+
+    printf("===== MENU =====\n");
+    printf("1. Check Positive/Negative/Zero\n");
+    printf("2. Check Even/Odd\n");
+    printf("3. Find Largest of Three Numbers\n");
+    printf("4. Simple Calculator\n");
+
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+
+    switch(choice) {
+
+        case 1:
+            printf("Enter a number: ");
+            scanf("%d", &num);
+
+            if(num > 0)
