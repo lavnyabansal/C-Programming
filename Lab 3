@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int num, i, j, n;
+    long long factorial = 1;
+
+    // Multiplication Table
+    printf("Enter a number for multiplication table: ");
+    scanf("%d", &num);
+
+    printf("\nMultiplication Table of %d\n", num);
+
+    for(i = 1; i <= 10; i++) {
+        printf("%d x %d = %d\n", num, i, num * i);
+    }
+
+    // Factorial
+    printf("\nEnter a number to find factorial: ");
+    scanf("%d", &n);
+
+    for(i = 1; i <= n; i++) {
+        factorial = factorial * i;
+    }
+
+    printf("Factorial of %d = %lld\n", n, factorial);
+
+    return 0;
+}
